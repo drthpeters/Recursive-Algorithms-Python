@@ -1,6 +1,6 @@
-# Recursive-Algorithms-Python
+# Recursive Algorithms coded in Python
 This repository contains a text about coding some kinds of recursive algorithms in Python. 
-Additionally it contains the corresponding Python codes as well as 
-solutions of the problems lined out in the text.
+Additionally the corresponding Python codes can be downloaded.
+Don't miss the exercises. The solutions are also available.
 
-The used Python version is 3.8.8.
+The used Python version is 3.9.13.
