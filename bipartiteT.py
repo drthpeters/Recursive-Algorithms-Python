@@ -1,10 +1,3 @@
-# -*- coding: utf"-8 -"*-
-""""
-Created on Sun Sep 10 10:00:35 2023
-
-@author: Tommy
-"""
-
 import turtle as tu
 import time
 
