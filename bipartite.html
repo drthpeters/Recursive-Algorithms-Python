@@ -15,27 +15,27 @@ Given is an <strong><I>undirected graph G = (V,E)</I></strong>. The set of verti
 We apply the method of <strong><I>augmenting paths</I></strong>. The algorithm and more interesting facts can be found in <A href = "https://discrete.openmathbooks.org/dmoi3/sec_matchings.html">Levin, Oscar: Discrete Mathematics: An Open Introduction, 3rd edition</A> [last called 2023-09-21]. A <em>path</em> is a finite ordered sequence of vertices. Here only paths are considered whose edges are edges of <em>G</em>. That means that vertices of <em>A</em> and <em>B</em> alternate with each other. The <font color = "green">green</font> and <font color = "red">red</font> edges mark a path (<em>b,f,a,h,d,j</em>) or (<em>j,d,h,a,f,b</em>). Let us choose the first orientation. Edges that belong to a matching are colored <font color = "green">green</font>, the rest is colored <font color = "red">red</font>. When we walk along the path we recognize that {<em>b,f</em>}, {<em>a,h</em>} and {<em>d,j</em>} belong to a matching <em>M</em>.
 <br><br> 
 <center>
-<img src = "https://drthpeters.github.io/bipartiteM.jpg" alt = "Matching M" />
+<img src = "https://drthpeters.github.io/Recursive-Algorithms-Python/bipartiteM.jpg" alt = "Matching M" />
 </center>
 <br><br>
 <P style = "font-size:22px;text-align:justify">
 Now consider a path that begins at a vertex of <em>A</em> that does not belong to <em>M</em>, for example <em>e</em>. We can augment the path by adding the edge {<em>e,j</em>} and also {<em>b,g</em>}. So we get a new path (<em>e,j,d,h,a,f,b,g</em>). If we walk along the path we recognize that {<em>e,j</em>}, {<em>d,h</em>}, {<em>a,f</em>} and {<em>b,g</em>} belong to a new Matching <em>M1</em>. These edges are now colored <font color = "green">green</font>. But the edges of the former matching <em>M</em> do not belong to the new matching any more. They are colored <font color = "red">red</font>. By this process we got a new matching <em>M1</em> consisting of one element more than <em>M</em>.
 <br><br> 
 <center>
-<img src = "https://drthpeters.github.io/bipartiteM1.jpg" alt = "Matching M1" />
+<img src = "https://drthpeters.github.io/Recursive-Algorithms-Python/bipartiteM1.jpg" alt = "Matching M1" />
 </center>
 <br><br>
 <P style = "font-size:22px;text-align:justify"> 
 This procedure can be continued. A new augmenting path is (<em>c,g,b,f,a,h,d,j,e,k</em>). This results in a <strong><I>perfect matching</I></strong> <em>M2</em> = {{<em>c,g</em>}, {<em>b,f</em>}, {<em>a,h</em>}, {<em>d,j</em>}, {<em>e,k</em>}}. It is called perfect because all vertices of <em>A</em> and <em>B</em> belong to an edge of <em>M2</em>.
 <br><br> 
 <center>
-<img src = "https://drthpeters.github.io/bipartiteM2.jpg" alt = "Matching M2" />
+<img src = "https://drthpeters.github.io/Recursive-Algorithms-Python/bipartiteM2.jpg" alt = "Matching M2" />
 </center>
 <br><br>
 <P style = "font-size:22px;text-align:justify"> 
 The code written in Python 3.9 contains three <em>recursive functions</em> needed to find augmenting paths and to build larger matchings if possible. You can easily modify the code inserting your own sets <em>A</em>, <em>B</em>, each consisting of at most five vertices, and a predefined matching and your set of arcs. For the program the edges are initially directed from vertices of <em>A</em> to vertices of <em>B</em>, so they are called <em>arcs</em> instead of <em>edges</em>. Your initial matching may be empty, <em>M</em> = []. It may happen that a new path is very short, consisting only of two vertices. A new matching may consist of more than one path. Notice that the Python script will not necessarily reproduce the plots of this site. 
 <br>
-<A href = "https://drthpeters.github.io/bipartiteT.py">code bipartite</A> 
+<A href = "https://drthpeters.github.io/Recursive-Algorithms-Python/bipartiteT.py">code bipartite</A> 
 </P>
 </body>
 </HTML>
