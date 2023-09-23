@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<HTML>
+<body style="background-color:#D0FFE0"; leftmargin = 30%; rightmargin = 35%>
+
+<HEAD>
+  <meta charset = "utf-8">
+  <TITLE>Pythagorean Tree</TITLE>
+</HEAD>
+<center>
+<P style = "font-size:32px"><I>Example <strong>Pythagorean Tree</strong></I></P>
+
+<P style = "font-size:22px;text-align:justify">Everybody knows the <strong><I>Pythogorean theorem</I></strong>. If not or if you want more interesting information, look at
+<A href = "https://en.wikipedia.org/wiki/Pythagorean_theorem">Wikipedia: Pythagorean theorem</A> [last seen 2023-09-22]. We draw squares over both of the short sides of a rectangular triangle. Then we take the sides of the squares opposite to the sides belonging to the triangle as new hypotenuses, and we construct two new smaller triangles. (In a rectangular triangle the side opposite to the right angle is called hypotenuse, see
+<A href = "https://en.wikipedia.org/wiki/Hypotenuse">Hypotenuse - Wikipedia</A> [last seen 2023-09-22].)
+<br><br>
+<center>
+<img src = "https://drthpeters.github.io/Recursive-Algorithms-Python/treePyth1.jpg" alt = "treePyth 3 triangles"/>
+</center>
+<br><br><P style = "font-size:22px;text-align:justify">
+The procedure described can be continued, and this way we get a lot of rectangular triangles with with squares at their short sides. This can be repeated until a certain short length of the hypotenuse is reached. The drawing using <em>turtlegraphics</em> looks like some kind of an abstract tree. For more details and further information see <A href = "https://larryriddle.agnesscott.org/ifs/pythagorean/pythTree.htm">Pythagorean Tree (agnesscott.org) </A> [last seen 2023-09-22].
+<br><br>
+<center>
+<img src = "https://drthpeters.github.io/Recursive-Algorithms-Python/treePyth2.jpg" alt = "treePyth many triangles" width = 90% height = 90%/>
+</center>
+<br><br><P style = "font-size:22px;text-align:justify">
+The code is written in Python 3.9. Function “tree” contains two <em>recursive calls</em> so that each triangle branches into two smaller triangles if possible.
+<br>
+<A href = "https://drthpeters.github.io/Recursive-Algorithms-Python/tree_Pyth.py">code Pythagorean tree</A>
+</P>
+</body>
+</HTML>
+
+
+  
