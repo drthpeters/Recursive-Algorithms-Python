@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<HTML>
+<body style="background-color:#FFE0D0"; leftmargin = 30%; rightmargin = 35%>
+
+<HEAD>
+  <meta charset = "utf-8">
+  <TITLE>Palindromes</TITLE>
+</HEAD>
+<center>
+<P style = "font-size:32px"><I>Example <strong>Palindromes</strong></I></P>
+
+<P style = "font-size:22px;text-align:justify">
+A <strong><I>palindrome</I></strong> is a word or a group of words (or a number) that is the same when you read it in the normal direction from left to right or in the reverse direction. Simple examples are “noon” or “level”, see also <A href = "https://dictionary.cambridge.org/dictionary/english/palindrome">PALINDROME | English meaning - Cambridge Dictionary</A> [last seen 2023-09-24]. There is also a <em>recursive definition</em>, see <A href = "https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/using-recursion-to-determine-whether-a-word-is-a-palindrome">Using recursion to determine whether a word is a palindrome (article) | Khan Academy</A>  [last seen 2023-09-24]. The version we apply in our Python script is:<BR>
+<ul style = "font-size:22px;text-align:justify">
+<li>A word consisting of at most one character is a palindrome.</li>
+<li>A word is not a palindrome if the first and the last letter are different.</li>
+<li>Otherwise remove the first and the last letter from the word and check the rest.</li>
+</ul>
+<P style = "font-size:22px;text-align:justify">
+A short group of words like “no lemon no melon” is considered as a palindrome too. We want our program to detect such palindromes. So we must remove spaces from the group of words, and we must convert all letters to capitals. This is done in function <em>checkPalindrome</em>. From that function the <em>recursive function isPalindrome</em> is called. The script also contains a couple of examples of words, numbers and small groups of words, some of which are palindromes and some are not. If you want the program to detect palindromes as “Madam, I'm Adam”, you have to add a statement to function <em>checkPalindrome</em>.
+<br>
+<A href = "https://drthpeters.github.io/Recursive-Algorithms-Python/palindrome.py">code palindromes</A>
+</P>
+</body>
+</HTML>
+
+
+  
